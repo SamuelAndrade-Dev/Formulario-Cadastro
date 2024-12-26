@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulario-Validação</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li></li>
+                </ul>
+            </nav>
+        </header>
+        <form class="container">
+            <h3>Formulario</h3>
+            <fieldset>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" min="4" max="15" required>
+                <input type="text" name="nome" id="nome">
+                <br>
+                <label for="data">Data de Nascimento</label>
+                <input type="date" name="data" id="data">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="numero">Telefone</label>
+                <input type="tel" name="numero" id="numero">
+                <br>
+                <label for="sexo">Sexo</label>
+                <input type="checkbox" name="sexo" id="sexo">
+                <input type="checkbox" name="sexo" id="sexo">
+                <br>
+                <label for="idade">Idade</label>
+                <input type="text" placeholder="Ex: 18" name="idade" id="idade">
+                <input type="submit" name="enviar" id="enviar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
