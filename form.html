@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Formulario-Validação</title>
 </head>
 <body>
@@ -12,32 +15,48 @@
             <nav>
                 <ul>
                     <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
             </nav>
         </header>
+        <h3>Novo Cadastro</h3>
         <form class="container">
-            <h3>Formulario</h3>
-            <fieldset>
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" min="4" max="15" required>
-                <input type="text" name="nome" id="nome">
-                <br>
-                <label for="data">Data de Nascimento</label>
-                <input type="date" name="data" id="data">
-                <br>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <br>
-                <label for="numero">Telefone</label>
-                <input type="tel" name="numero" id="numero">
-                <br>
-                <label for="sexo">Sexo</label>
-                <input type="checkbox" name="sexo" id="sexo">
-                <input type="checkbox" name="sexo" id="sexo">
-                <br>
-                <label for="idade">Idade</label>
-                <input type="text" placeholder="Ex: 18" name="idade" id="idade">
-                <input type="submit" name="enviar" id="enviar">
+            <fieldset class="contant">
+                <section>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+                </section>
+                <section>
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" name="data" id="data">
+                </section>
+                <section>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Exemplo@gmail.com">
+                </section>
+                <section>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Escolha um senha dificil">
+                </section>
+                <section>
+                    <label for="numero">Telefone</label>
+                    <input type="tel" name="numero" id="numero" placeholder="Ex: 61 992222222">
+                </section>
+                <section>
+                    <label for="sexo">Sexo</label>
+                    <input type="checkbox" name="sexo" id="sexo">
+                    <input type="checkbox" name="sexo" id="sexo">
+                </section>
+                <section>
+                    <button id="">
+                        <a href="">Cadastrar</a>
+                    </button>
+                </section>
+                <section>
+                    <label for="feedback">Deixe seu Feedback:</label>
+                    <input type="text" placeholder="O que poderiamos melhorar?" name="feedback" id="feedback" class="feedback">
+                </section>
             </fieldset>
         </form>
     </main>
