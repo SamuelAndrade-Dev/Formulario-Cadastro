@@ -22,37 +22,52 @@
         </header>
         <form class="container-principal">
             <fieldset class="container">
-                <h3>Novo Cadastro</h3>
-                <section>
-                    <label for="username">Nome</label>
-                    <input type="text" name="username" id="username" placeholder="Nome Completo">
+                <section class="titles">
+                    <h3>Cadastr de Devs</h3>
+                    <h6>Complete suas informações</h6>
                 </section>
                 <section>
-                    <label for="data">Data de Nascimento</label>
-                    <input type="date" name="data" id="data">
+                    <label for="username">Nome</label>
+                    <input type="text" name="username" id="username" placeholder="Primeiro Nome">
+                </section>
+                <section>
+                    <label for="username-name">Sobrenome</label>
+                    <input type="text" name="username-name" id="username-name" placeholder="Segundo Nome">
                 </section>
                 <section>
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Exemplo@gmail.com">
                 </section>
-                <section>
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" id="senha" placeholder="Escolha um senha dificil">
+                <h4 for="">Qual aplicação você desenvolve?</h4>
+                <section class="aplication">
+                    <label for="">Front-end</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Back-end</label>
+                    <input type="radio" name="" id="">
+                    <label for="">Full-stack</label>
+                    <input type="radio" name="" id="">
                 </section>
                 <section>
-                    <label for="numero">Telefone</label>
-                    <input type="tel" name="numero" id="numero" placeholder="Ex: 61 992222222">
+                    <label for="senioridade">Senioridade</label>
+                   <select name="Senioridade">
+                     <option value="">Escolha</option>
+                     <option value="">Junior</option>
+                     <option value="">Pleno</option>
+                     <option value="">Senior</option>
+                   </select>
                 </section>
+                <h4>Selecione as tecnologia ulizada por você:</h4>
                 <section class="check-box">
-                    <p>Gênero:</p>
-                    <label for="genero">Masculino</label>
+                    <label for="genero">HTML</label>
                     <input type="checkbox" name="genero" id="genero">
-                    <label for="">Feminino</label>
-                    <input type="checkbox" name="genero" id="genero">
+                    <label for="">CSS</label>
+                    <input type="checkbox" name="sexo" id="sexo">
+                    <label for="">JavaScript</label>
+                    <input type="checkbox" name="sexo" id="sexo">
                 </section>
-                <section>
+                <section class="feedback">
                     <label for="feedback">Deixe seu Feedback:</label>
-                    <input type="text" placeholder="O que poderiamos melhorar?" name="feedback" id="feedback" class="feedback">
+                    <input type="text" name="feedback" id="feedback" class="feedback">
                 </section>
                 <section>
                     <button id="" type="submit">
@@ -62,5 +77,6 @@
             </fieldset>
         </form>
     </main>
+    <script src="form.js"></script>
 </body>
 </html>

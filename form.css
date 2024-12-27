@@ -13,13 +13,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    h3 {
+    .titles {
         color: aliceblue;
         background: linear-gradient(rgb(54, 54, 156), rgb(126, 127, 190));
         border-radius: 5px;
         text-align: center;
         padding: 5px;
     }
+
 }
 
 .container-links {
@@ -57,8 +58,13 @@ body {
         width: 100%;
         margin-top: 10px;
         margin-bottom: 15px;
+        bottom: 0;
         padding: 10px;
     }
+    .aplication {
+        
+    }
+
     .check-box {
         display: flex;
         margin-top: 5px;
@@ -70,4 +76,5 @@ body {
             margin-top: 5.5px;
         }
     }
+
 }
