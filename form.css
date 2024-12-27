@@ -5,42 +5,69 @@
 }
 
 body {
-    background-color: black;
-    font-family: "poppins", sans-serif;
+    background: linear-gradient(108deg, rgba(181,227,223,1) 0%, rgba(38,117,200,1) 0%, rgba(44,177,227,1) 100%, rgba(0,176,255,1) 100%);    font-family: "poppins", sans-serif;
+}
+
+.container-principal {
     display: flex;
-    min-height: 100vh;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     h3 {
-        margin-left: 30px;
         color: aliceblue;
+        background: linear-gradient(rgb(54, 54, 156), rgb(126, 127, 190));
+        border-radius: 5px;
         text-align: center;
-        margin-bottom: 10px;
-        font-size: 25px;
-        background: linear-gradient(90deg, rgb(133, 133, 255), rgb(91, 230, 255), rgb(34, 229, 255));
-        border-radius: 10px;
+        padding: 5px;
     }
 }
 
+.container-links {
+        background: linear-gradient(22deg, rgb(23, 99, 92) 0%, rgb(17, 71, 129) 0%, rgb(61, 110, 245) 100%, rgba(0,176,255,1) 100%);    font-family: "poppins", sans-serif;
+        h3 {
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+        }
+        ul {
+            display: flex;
+            justify-content: end;
+            padding-bottom: 10px;
+            gap: 100px;
+            list-style: none;
+            margin-right: 60px;
+    }
+}
+    
 .container {
     background-color: aliceblue;
-    width: 100%;
-    padding: 20px;
     border-radius: 20px;
-    max-width: 800px;
-}
-
-.contant {
-    padding: 10px;
+    padding: 30px;
+    width: 400px;
     input {
-        display: block;
-        border: 1px solid;
-        border-radius: 2px;
+        border: 1px solid rgb(92, 92, 92);
+        border-radius: 5px;
         padding: 5px;
         width: 100%;
     }
-    label {
-        display: inline-block;
+    button {
+        background-color: #00c3ff;
+        border: 1px solid rgb(92, 92, 92);
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    .check-box {
+        display: flex;
+        margin-top: 5px;
+        label {
+            padding-left: 47px;
+        }
+        input {
+            margin-bottom: 10px;
+            margin-top: 5.5px;
+        }
     }
 }
-
