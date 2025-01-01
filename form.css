@@ -61,8 +61,16 @@ body {
         bottom: 0;
         padding: 10px;
     }
-    .aplication {
-        
+    .application  {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        input {
+        width: 20px;
+        }
+        label {
+            padding-left: 10px;
+        }
     }
 
     .check-box {
@@ -76,5 +84,14 @@ body {
             margin-top: 5.5px;
         }
     }
-
+    .senioridade {
+        padding-bottom: 5px;
+        label {
+            font-style: italic;
+        }
+    }
+    .feedback input {
+        padding-bottom: 70px;
+    }
 }
+

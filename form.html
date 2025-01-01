@@ -20,36 +20,36 @@
                 </ul>
             </nav>
         </header>
-        <form class="container-principal">
+        <form class="container-principal" id="form">
             <fieldset class="container">
                 <section class="titles">
-                    <h3>Cadastr de Devs</h3>
+                    <h3>Cadastro de Devs</h3>
                     <h6>Complete suas informações</h6>
                 </section>
                 <section>
-                    <label for="username">Nome</label>
+                    <label for="username">Nome:</label>
                     <input type="text" name="username" id="username" placeholder="Primeiro Nome">
                 </section>
                 <section>
-                    <label for="username-name">Sobrenome</label>
-                    <input type="text" name="username-name" id="username-name" placeholder="Segundo Nome">
+                    <label for="username-name">Sobrenome:</label>
+                     <input type="text" name="surname" id="surname" placeholder="Segundo Nome">
                 </section>
                 <section>
-                    <label for="email">Email</label>
+                    <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="Exemplo@gmail.com">
                 </section>
-                <h4 for="">Qual aplicação você desenvolve?</h4>
-                <section class="aplication">
+                <section class="application" id="application">
+                    <h4>Qual aplicação você desenvolve?</h4>
                     <label for="">Front-end</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="application" id="radio" >
                     <label for="">Back-end</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="application" id="radio" >
                     <label for="">Full-stack</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="application" id="radio">
                 </section>
-                <section>
+                <section class="senioridade">
                     <label for="senioridade">Senioridade</label>
-                   <select name="Senioridade">
+                   <select name="Senioridade" id="senioridade">
                      <option value="">Escolha</option>
                      <option value="">Junior</option>
                      <option value="">Pleno</option>
@@ -57,22 +57,20 @@
                    </select>
                 </section>
                 <h4>Selecione as tecnologia ulizada por você:</h4>
-                <section class="check-box">
-                    <label for="genero">HTML</label>
-                    <input type="checkbox" name="genero" id="genero">
-                    <label for="">CSS</label>
-                    <input type="checkbox" name="sexo" id="sexo">
-                    <label for="">JavaScript</label>
-                    <input type="checkbox" name="sexo" id="sexo">
+                <section class="check-box" >
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="html" id="check">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="css" id="check">
+                    <label for="js">JavaScript</label>
+                    <input type="checkbox" name="js" id="check">
                 </section>
                 <section class="feedback">
                     <label for="feedback">Deixe seu Feedback:</label>
-                    <input type="text" name="feedback" id="feedback" class="feedback">
+                    <input type="text" name="feedback" id="feedback-text" >
                 </section>
                 <section>
-                    <button id="" type="submit">
-                        Enviar
-                    </button>
+                    <button type="submit" onclick="validateForm()">Enviar</button>
                 </section>
             </fieldset>
         </form>
